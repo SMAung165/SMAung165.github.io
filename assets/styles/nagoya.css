@@ -7,7 +7,7 @@ body
 	margin: 0;
 }
 
-.container
+.banner
 {
 	width: 100%;
 	height: 50%;
@@ -20,7 +20,7 @@ body
 	overflow: hidden;
 }
 
-.div1
+.banner .banner-content
 {
 	width: 100%;
 	height: 100%;
@@ -45,7 +45,7 @@ body
 	transition: all 0.5s;
 }
 
-.container:hover .div1
+.banner:hover .banner-content
 {
 	opacity: 0.8;
 	transform: scale(1);
@@ -72,7 +72,7 @@ div.main h1:first-child
 
 }
 
-.container1, .container2
+.legoland .container1, .container2
 {
 	width: inherit;
 	display: flex;
@@ -84,7 +84,7 @@ div.main h1:first-child
 
 }
 
-.container1	.image-box
+.legoland .container1 .image-box
 {
 	width: 400px;
 	background-size: contain;
@@ -96,7 +96,7 @@ div.main h1:first-child
 }
 
 
-.container1 .image-box img
+.legoland .container1 .image-box img
 {
 	width: 100%;
 	border-radius: 10px;
@@ -104,7 +104,7 @@ div.main h1:first-child
 }
 
 
-.container1 .content, .container2 .content
+.legoland .container1 .content, .legoland .container2 .content
 {
 	padding: 0px 30px;
 	width: 600px;
@@ -117,19 +117,12 @@ div.main h1:first-child
 	text-align: left;
 	letter-spacing: 2px;
 }
-
-.container2
-{
-	margin-bottom: 0;
-	padding-bottom: 40px;	
-
-}
-.container2 h2
+.legoland .container2 h2
 {
 	text-transform: capitalize;
 }
 
-.container2 .gmaps-box
+.legoland .container2 .gmaps-box
 {
 	width: 400px;
 	height: 300px;
@@ -142,7 +135,7 @@ div.main h1:first-child
 	margin-left: 20px;
 }
 
-.container2 .gmaps-box iframe{
+.legoland .container2 .gmaps-box iframe{
 	width: 100%;
 	height: 100%;
 }
