@@ -9,6 +9,16 @@
 	}
 }
 
+@media screen and (min-width:1245px)
+{
+
+	#nagoya-castle .container1 .unique
+	{
+		width: 1060px;
+	}
+
+}
+
 .banner .nav-menu li:hover a::before
 {
 	left: 50%;
@@ -179,25 +189,22 @@ div.main h1:first-child
 	color: rgba(0,0,0,0.7);
 	text-shadow: 2px 8px 10px rgba(0,0,0,0.2);
 
-	padding: 40px 0px 20px 0px;
+	padding: 40px 0px 40px 0px;
 	margin: 0;
 	text-transform: uppercase;
 
 }
 
-#legoland .container1, .container2
+.container1, .container2
 {
 	width: inherit;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-
-	margin: 0px auto 20px auto;
-
 }
 
-#legoland .container1 .image-box
+.container1 .image-box
 {
 	width: 400px;
 	background-size: contain;
@@ -210,7 +217,7 @@ div.main h1:first-child
 }
 
 
-#legoland .container1 .image-box img
+.container1 .image-box img
 {
 	width: 100%;
 	border-radius: 0px;
@@ -218,7 +225,7 @@ div.main h1:first-child
 }
 
 
-#legoland .container1 .content, #legoland .container2 .content
+.container1 .content, .container2 .content
 {
 	padding: 0px 30px;
 	width: 600px;
@@ -231,17 +238,17 @@ div.main h1:first-child
 	text-align: left;
 	letter-spacing: 2px;
 }
-#legoland .container2 h2
+.container2 h2
 {
 	text-transform: capitalize;
 }
 
-#legoland .container2 .gmaps-box 
+.container2 .gmaps-box 
 {
 	padding: 0px 30px;
 }
 
-#legoland .container2 .gmaps-box .gmaps
+.container2 .gmaps-box .gmaps
 {
 	min-width: 400px;
 	height: 250px;
@@ -252,15 +259,15 @@ div.main h1:first-child
 	box-shadow: 2px 2px 20px rgba(0,0,0,0.2);
 }
 
-#legoland .container2 .gmaps-box .gmaps iframe
+.container2 .gmaps-box .gmaps iframe
 {
 	width: 100%;
 	height: 100%;
 }
 
-#legoland
+#nagoya-castle
 {
-	padding-bottom: 20px;
+	padding-bottom: 30px;
 }
 
 .footer
