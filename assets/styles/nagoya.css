@@ -31,9 +31,9 @@
 	transform: scale(1);
 }
 
-
-
 /*interactive section*/
+
+
 html, body
 {
 	min-width: 477px;
@@ -44,9 +44,17 @@ body
 	height: 100vh;
 
 	font-family: Corbel, sans-serif;
-	background-color: rgba(0,0,0,0.1);
+	background: rgba(0,0,0,0.0);
 
 	margin: 0;
+}
+
+.main-container
+{
+	padding:30px 0px;
+	display: block;
+	background:url('../images/bg-arts/bg-waves.png') repeat-y;
+	background-size: contain;
 }
 
 .banner
@@ -177,9 +185,11 @@ body
 div.main
 {
 	width:90%;
-	background-color: white;
+	background: white;
 
-	margin: 30px auto;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+
+	margin: auto;
 }
 
 div.main h1:first-child
