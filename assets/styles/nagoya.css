@@ -6,6 +6,10 @@
 	{
 		padding:0px 0px !important;
 	}
+	.go-down, .go-up
+	{
+		display: none;
+	}
 	div.main
 	{
 		width: 100% !important;
@@ -41,11 +45,17 @@
 }
 
 /*interactive section*/
-
+*
+{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
 
 html, body
 {
 	min-width: 477px;
+	scroll-behavior: smooth;
 }
 
 body
@@ -60,10 +70,44 @@ body
 
 .main-container
 {
-	padding:30px 0px;
+	/*padding:50px 0px 0px 0px;*/
 	display: block;
 	background:url('../images/bg-arts/bg-waves.png') repeat-y;
 	background-size: cover;
+}
+
+.go-down, .go-up
+{
+	padding:30px 0px;
+
+}
+
+.go-down a, .go-up a
+{
+	width: 40px;
+	height: 40px;
+
+	background: #505050;
+
+	margin: auto;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+
+	border-radius: 10px;
+}
+
+.go-down a:active, .go-up a:active
+{
+	background: white;
+	color: #262626;
 }
 
 .banner
@@ -239,8 +283,8 @@ div.main h1:first-child
 .container1 .image-box img
 {
 	width: 100%;
-	border-radius: 0px;
-	box-shadow:2px 2px 20px rgba(0,0,0,0.2);
+	border-radius: 10px;
+	box-shadow: 2px 2px 20px rgba(0,0,0,0.2);
 }
 
 
@@ -304,13 +348,15 @@ div.main h1:first-child
 	flex-direction: row;
 	flex-wrap: wrap;
 
+	position: relative;
+
 }
 
 .footer div.footer-left, .footer div.footer-center, .footer div.footer-right
 {
 	width: 30%;
 	min-width: 300px;
-	padding:10px;
+	padding:15px;
 
 	text-align: center;
 }
