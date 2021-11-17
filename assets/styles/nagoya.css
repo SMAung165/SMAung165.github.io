@@ -348,9 +348,9 @@ div.main h1:first-child
 	height: 100%;
 }
 
-#nagoya-tv-tower
+.place:last-child
 {
-	padding-bottom: 30px;
+	padding-bottom: 40px;
 }
 
 .footer
