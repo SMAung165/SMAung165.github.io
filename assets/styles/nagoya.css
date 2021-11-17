@@ -476,6 +476,7 @@ div.main h1:first-child
 .footer h3
 {
 	text-transform: uppercase;
+	margin: 15px 0px;
 }
 
 .footer div.footer-center .btn-container a
