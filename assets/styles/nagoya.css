@@ -116,6 +116,25 @@
 	}
 }
 
+@keyframes fade-in-appears
+{
+	0%
+	{
+		transform: translateY(1%);
+		opacity: 0;
+	}
+	60%
+	{
+		transform: translateY(-0.5%);
+		opacity: 0.6;
+	}
+	100%
+	{
+		transform: translateY(0%);
+		opacity: 1;
+	}
+}
+
 .banner .nav-menu li:hover a::before
 {
 	left: 50%;
@@ -359,6 +378,8 @@ div.main
 	box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
 
 	margin: auto;
+
+	animation: fade-in-appears 1s linear;
 }
 
 div.main h1:first-child
