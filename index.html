@@ -6,29 +6,52 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/png" href="assets/images/favicon/dlt.jpg" sizes="32x32">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<link rel="stylesheet" type="text/css" href="assets/styles/nagoya.css">
+		<link rel="stylesheet" type="text/css" href="assets/styles/nagoya.css">		
+		<script type="text/javascript">
+			function onscroll_fun()
+			{
+				var scrollTop = window.pageXOffset || document.documentElement.scrollTop;
+				
+				var nav_menu = document.getElementsByClassName('nav-menu');
+
+				if(scrollTop > 200)
+				{
+					nav_menu[0].style.backgroundColor = 'rgba(0,0,0,0.6)';
+				}
+				else
+				{					
+					nav_menu[0].style.backgroundColor = 'rgba(0,0,0,0.0)';
+				}
+				
+			}
+		</script>
 	</head>
-	<body>
+	<body onscroll="onscroll_fun()">
 
-		<div class="banner">
+		<div class="banner-container">
+			<div class="banner">
 
-			<div class="nav-menu">
+				<div class="nav-menu">
 
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#legoland">LegoLand</a></li>
-					<li><a href="#nagoya-castle">Nagoya Castle</a></li>
-					<li><a href="#nagoya-tv-tower">Mirai Tower</a></li>
-					<li><a href="#">LegoLand</a></li>
-				</ul>
-				
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#legoland">LegoLand</a></li>
+						<li><a href="#nagoya-castle">Nagoya Castle</a></li>
+						<li><a href="#nagoya-tv-tower">Mirai Tower</a></li>
+						<li><a href="#">LegoLand</a></li>
+					</ul>
+					
+				</div>
+
+				<div class="banner-content">
+
+					<span class="p1">(=^_^=) Warmly Welcome to NAGOYA (=^_^=)</span>
+					
+				</div>				
+
 			</div>
 
-			<div class="banner-content">
-
-				<span class="p1">(=^_^=) Warmly Welcome to NAGOYA (=^_^=)</span>
-				
-			</div>
+			<div class="banner-fade-out"></div>
 
 		</div>
 
@@ -267,7 +290,6 @@
 			
 		</div>
 
-		
 
 	</body>
 
