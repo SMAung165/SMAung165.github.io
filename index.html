@@ -17,10 +17,13 @@
 				if(scrollTop > 100)
 				{
 					nav_menu[0].style.backgroundColor = 'rgba(0,0,0,0.6)';
+					nav_menu[0].classList.remove("margin");
 				}
 				else
 				{					
 					nav_menu[0].style.backgroundColor = 'rgba(0,0,0,0.0)';
+					nav_menu[0].classList.remove("margin");
+					nav_menu[0].classList.add("margin");
 				}
 				
 			}
@@ -31,7 +34,7 @@
 		<div class="banner-container">
 			<div class="banner">
 
-				<div class="nav-menu">
+				<div class="nav-menu margin">
 
 					<ul>
 						<li><a href="#">Home</a></li>
