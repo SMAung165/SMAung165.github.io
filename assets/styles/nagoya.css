@@ -9,13 +9,13 @@
 
 	.banner .banner-content
 	{
-		animation: ani-banner-content 5s infinite;
+		animation: ani-banner-content 5s ease-in-out infinite !important;
 	}
 
 	.banner .banner-content span
 	{
 		font-size: 40%;
-		animation: ani-banner-content-span 5s infinite;
+		animation: ani-banner-content-span 5s ease-in-out infinite !important;
 	}
 
 	.main-container
@@ -290,9 +290,13 @@ body
 
 	opacity: 0;
 
+	position: relative;
+
+	animation: ani-banner-content 3s ease-in-out ;
+
 	transition: all 0.5s;
 
-	position: relative;
+
 }
 
 .banner .banner-content span
@@ -302,6 +306,8 @@ body
 	transform: scale(1.5);
 
 	transition: all 0.5s ease;
+
+	animation: ani-banner-content-span 3s ease-in-out ;
 }
 
 .main-container
